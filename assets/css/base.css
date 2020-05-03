@@ -840,8 +840,11 @@ li.bordered > ul > details > div {
 .color.midnightblue:before {
   background-color: midnightblue;
 }
-.color.chartreuse:before {
-  background-color: chartreuse;
+.color.blood:before {
+  background-color: #CC1100;
+}
+.color.red:before {
+  background-color: red;
 }
 
 /* Audio button */
