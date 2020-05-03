@@ -592,7 +592,7 @@ article {
   color: dimgrey;
 }
 .contacts li a.mail:hover {
-  color: dimgrey;
+  color: #B23121;
 }
 .contacts li a.skype:hover {
   color: #00aff0;
@@ -602,6 +602,12 @@ article {
 }
 .contacts li a.telegram:hover {
   color: #0088cc;
+}
+.contacts li a.twitter:hover{
+  color:#41ABE1;
+}
+.contacts li a.instagram:hover{
+  color:#DD2A7B;
 }
 .contacts li a.phone:hover {
   color: dimgrey;
