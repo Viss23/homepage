@@ -75,3 +75,23 @@
 }
 
 
+#ghost{
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+#ghost-animation{
+  display: none;
+}
+
+.hadouken img{
+  position: relative;
+}
+
+.hadouken-ryu{
+  height: 100px;
+  z-index: 2;
+  left:80px;
+  top:-70px;
+}
