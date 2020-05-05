@@ -95,3 +95,24 @@
   left:80px;
   top:-70px;
 }
+
+#powerful-hadouken{
+  position: absolute;
+  left:-150px;
+  top:-20px;
+  height: 170px;
+  display: none;
+}
+
+#ray{
+  position: absolute;
+  width:430px;
+  top:33px;
+  height: 73px;
+  left:197px;
+  display: none;
+}
+
+#hadouken:hover{
+  cursor: pointer;
+}
