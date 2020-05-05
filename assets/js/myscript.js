@@ -37,8 +37,9 @@ window.onload =function (){
     // get all childs element of items which will be deleated
     const elements= document.getElementById("hadouken-animation1").children;
     const elements2= document.getElementById("hadouken-animation2").children;
-    const listArray=Array.from([...elements,...elements2])
-    const timeForDeleatingOneElement=400;
+    const elements3= document.getElementById("hadouken-animation3").children;
+    const listArray=Array.from([...elements,...elements2,...elements3])
+    const timeForDeleatingOneElement=350;
     const animationTime= listArray.length * timeForDeleatingOneElement;
     //disable all effects when the animation is over
     setTimeout(()=>document.getElementById('hadouken-audio').pause(),animationTime);
