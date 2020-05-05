@@ -116,3 +116,21 @@
 #hadouken:hover{
   cursor: pointer;
 }
+
+@media only screen and (max-width: 767px){
+  #hadouken{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  #ray{
+    width: 170px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #ray{
+    width: 300px;
+  }
+}
