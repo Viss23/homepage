@@ -1,3 +1,14 @@
+.timeline-date{
+  padding-bottom:0.4em;
+  font-style: italic;
+  font-size: 1.05em;
+}
+
+
+.timeline-text{
+  text-indent: 1.25em;
+}
+
 .card {
   position: relative;
   
