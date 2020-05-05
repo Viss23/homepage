@@ -1,3 +1,14 @@
+.timeline-date{
+  padding-bottom:0.4em;
+  font-style: italic;
+  font-size: 1.05em;
+}
+
+
+.timeline-text{
+  text-indent: 1.25em;
+}
+
 .card {
   position: relative;
   
@@ -94,4 +105,58 @@
   z-index: 2;
   left:80px;
   top:-70px;
+}
+
+#powerful-hadouken{
+  position: absolute;
+  left:-150px;
+  top:-20px;
+  height: 170px;
+  display: none;
+}
+
+#ray{
+  position: absolute;
+  width:430px;
+  top:33px;
+  height: 73px;
+  left:197px;
+  display: none;
+}
+
+#hadouken{
+  font-size: 1.2em;
+}
+
+
+#hadouken:hover{
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 767px){
+  #hadouken{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  #ray{
+    width: 170px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #ray{
+    width: 300px;
+  }
+}
+
+#hadouken-undo{
+  display: none;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+#hadouken-undo:hover{
+  cursor: pointer;
 }
