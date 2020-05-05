@@ -113,6 +113,11 @@
   display: none;
 }
 
+#hadouken{
+  font-size: 1.2em;
+}
+
+
 #hadouken:hover{
   cursor: pointer;
 }
@@ -133,4 +138,14 @@
   #ray{
     width: 300px;
   }
+}
+
+#hadouken-undo{
+  display: none;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+#hadouken-undo:hover{
+  cursor: pointer;
 }
