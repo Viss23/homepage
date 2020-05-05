@@ -44,15 +44,27 @@ window.onload =function (){
     setTimeout(()=>document.getElementById('hadouken-audio').pause(),animationTime);
     setTimeout(()=>document.getElementById("powerful-hadouken").style.display="none",animationTime);
     setTimeout(()=>document.getElementById("ray").style.display="none",animationTime);
+    //add opportunity to undo deletions
+    setTimeout(()=>document.getElementById("hadouken-cancel-text").innerHTML="That's was fun.Do you want read about me more?",animationTime);
+    setTimeout(()=>document.getElementById("hadouken-undo").style.display="block",animationTime);
     for(let i=0;i<listArray.length;i++){
      setTimeout(() =>{
       listArray[i].style.display="none";
      },
      i * timeForDeleatingOneElement)
-    }  
-    ;
-    
+    };
+
   })
-    
+  document.getElementById("hadouken-undo").addEventListener("click",function(){
+    const elements= document.getElementById("hadouken-animation1").children;
+    const elements2= document.getElementById("hadouken-animation2").children;
+    const listArray=Array.from([...elements,...elements2])
+    for(let i=0;i<listArray.length;i++){
+       listArray[i].style.display="block";
+      }
+    document.getElementById("hadouken-cancel-text").innerHTML="SWEET OLD DAYS";
+    document.getElementById("hadouken-undo").style.display="none";
+  })
+  
 }
 
