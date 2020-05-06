@@ -1,0 +1,97 @@
+.card {
+  position: relative;
+  
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*Light  cover above the slide show*/
+.card::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 900;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(140, 22, 115, 0.2);
+}
+
+.card_part {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 7;
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  
+  transform: translateX( 700px );
+  background-image: url( '../img/youmust1.jpg ');
+  background-size: cover;
+  
+  animation: opaqTransition 10s cubic-bezier(0, 0, 0, 0.97) infinite;
+}
+
+
+.card_part.card_part-two {
+  z-index: 6;
+  background-image: url( '../img/youmust2.jpg');
+  background-size: 100% 100%;
+  background-position: center top;
+  animation-delay: 2.5s;
+}
+
+.card_part.card_part-three {
+  z-index: 5;
+  background-image: url( '../img/youmust3.jpg' );
+  background-size: cover;
+  background-position: center top;
+  animation-delay: 5s;
+}
+
+.card_part.card_part-four {
+  z-index: 4;
+  background-image: url( '../img/youmust4.jpg');
+  background-size: cover;
+  background-position: center top;
+  animation-delay: 7.5s;
+}
+
+@keyframes opaqTransition {
+  3% { transform: translateX( 0 ); }
+  25% { transform: translateX( 0 ); }
+  28% { transform: translateX( -700px ); }
+  100% { transform: translateX( -700px ); }
+}
+
+
+#ghost{
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+#ghost-animation{
+  display: none;
+}
+
+.hadouken img{
+  position: relative;
+}
+
+.hadouken-ryu{
+  height: 100px;
+  z-index: 2;
+  left:80px;
+  top:-70px;
+}
