@@ -1,4 +1,4 @@
-# An awesone Ryu Hoshi (リュウ Ryū) resumme.
+## An awesome [Ryu Hoshi (リュウ Ryū) resume](https://viss23.github.io/homepage/).
 
 ## In this summary you will know about:
 
